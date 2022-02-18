@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+   font-family: 'Poppins',sans-serif;
+   background-color: #111;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   overflow: hidden;
+   margin: 0;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.square{
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #000;
+    height: 16px;
+    width: 16px;
+    margin:2px;
+    transition: 2s ease;
+}
+.square:hover {
+    transition-duration: 0s;
+}
+
+#btnRemove {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    background-color: #8e44ad;
+    border: none;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+    width: 200px;
+    height: 60px;
+    font-family: inherit;
+    border: 1px solid #fff;
+}
+
+#btnRemove:hover{
+    background-color: #fff;
+    color: #8e44ad;
+    border: 1px solid #8e44ad;
+    transition: 1s ease-in-out;
+}
+#btnRemove:focus{
+    outline: none;
+    background-color: #5e3370;
+}
+@media(max-width:480px){
+    #btnRemove {
+        position: absolute;
+        left: 35%;
+        top: 13%;
+        background-color: #8e44ad;
+        border: none;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-family: inherit;
+        padding: 1.3rem;
+        width: 130px;
+        height: 60px;
+        font-family: inherit;
+        border: 1px solid #fff;
+    }
+    
+}
